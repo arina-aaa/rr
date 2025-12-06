@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хакатон проект</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-rocket"></i> Мой хакатон проект</h1>
+            <p class="subtitle">Создан в GitHub Codespaces</p>
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2><i class="fas fa-code"></i> О проекте</h2>
+                <p>Этот сайт создан для хакатона. Редактируй файлы слева и сразу видишь изменения справа!</p>
+            </div>
+            
+            <div class="card">
+                <h2><i class="fas fa-cogs"></i> Функции</h2>
+                <ul>
+                    <li>Адаптивный дизайн</li>
+                    <li>Интерактивные кнопки</li>
+                    <li>Динамическое обновление</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2><i class="fas fa-play-circle"></i> Демо</h2>
+                <button id="demoBtn" class="btn">
+                    <i class="fas fa-magic"></i> Нажми меня!
+                </button>
+                <div id="output" class="output"></div>
+                <div class="counter">
+                    <button id="decrement" class="btn-small"><i class="fas fa-minus"></i></button>
+                    <span id="count">0</span>
+                    <button id="increment" class="btn-small"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2><i class="fas fa-terminal"></i> Команды</h2>
+                <div class="commands">
+                    <code>git add .</code>
+                    <code>git commit -m "сообщение"</code>
+                    <code>git push</code>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Создано с <i class="fas fa-heart" style="color: #e74c3c;"></i> на хакатоне</p>
+            <p class="time" id="currentTime">Загрузка времени...</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
